@@ -16,8 +16,22 @@ class ProjectController extends Controller
 
     public function index()
     {
-        $projects = $this->project->get();
+        
+        return view('pages.projects.creations.index');
+    }
+    
+    public function create()
+    {
+        return view('pages.projects.creations.create');
+    }
 
-        return view('pages.pojects.creations.index', compact('projects'));
+    public function show(Project $project)
+    {
+        return view('pages.projects.creations.show');
+    }
+
+    public function edit(Project $project)
+    {
+        return view('pages.projects.creations.edit');
     }
 }
