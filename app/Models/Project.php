@@ -15,4 +15,9 @@ class Project extends Model
         'desc'
     ];
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 }
