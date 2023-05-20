@@ -6,7 +6,6 @@ use Livewire\Component;
 
 class Index extends Component
 {
-    public $input;
     public function render()
     {
         return view('livewire.pages.projects.creations.index');

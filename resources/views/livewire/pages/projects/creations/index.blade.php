@@ -1,3 +1,3 @@
 <div>
-    <p>index component from livewire</p>
+    <p>Index component from livewire</p>
 </div>
