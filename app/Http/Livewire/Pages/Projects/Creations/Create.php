@@ -10,9 +10,10 @@ class Create extends Component
     public Project $project;
 
     protected $rules = [
-        'project.user_id' => 'required',
-        'project.title'   => 'required',
-        'project.desc'    => NULL,    
+        
+        'project.title'   => 'required'
+        
+
     ];
 
     public function mount(){
@@ -21,7 +22,8 @@ class Create extends Component
 
     public function save()
     {
-        
+        $this->validate();
+
         Project::create($this->project->toArray());
         return redirect()->route('pages.projects.creations.index');
     }
