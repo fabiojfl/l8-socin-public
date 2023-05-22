@@ -25,7 +25,10 @@ class home extends Component
      */
     public function render()
     {
-        $teams = Team::all();
+        //$teams = Team::all();
+
+        $teams = Team::where('personal_team', 0)->get();
+
         return view('components.dashboard.home', compact('teams'));
     }
 }
