@@ -57,7 +57,7 @@
                                 <span class="checkbox-text">Keep me logged in</span>
                             </label>
                         </div>
-                        <a href="">
+                        <a href="{{ route('login') }}">
                             {{ __('Already registered?') }}
                         </a>
                     </div>
