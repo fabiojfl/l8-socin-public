@@ -15,13 +15,15 @@
                 </p>
             </div>
         </div>
-
         @if (session('status'))
-            <div class="mb-4 font-medium text-sm text-green-600">
-                {{ session('status') }}
+            <div class="card-body">
+                <div class=" alert alert-success " role="alert">
+                    <div class="alert-content">
+                        {{ session('status') }}
+                    </div>
+                </div>
             </div>
         @endif
-
         <x-jet-validation-errors class="mb-4" />
         <div class="card-body">
             <form method="POST" action="{{ route('password.email') }}">
