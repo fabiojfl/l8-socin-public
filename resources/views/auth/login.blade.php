@@ -30,7 +30,9 @@
                                 <span class="checkbox-text">Keep me logged in</span>
                             </label>
                         </div>
-                        <a href="">forget password?</a>
+                         @if (Route::has('password.request'))
+                            <a href="{{ route('password.request') }}">{{ __('Forgot your password?') }}</a>
+                        @endif 
                     </div>
                     <div class="admin__button-group button-group d-flex pt-1 justify-content-md-start justify-content-center">
                         <button class="btn btn-primary btn-default w-100 btn-squared text-capitalize lh-normal px-50 signIn-createBtn ">
