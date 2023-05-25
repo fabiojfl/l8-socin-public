@@ -30,7 +30,7 @@
         @livewire('standard-components.sidebar')
         <div class="contents">
         <!-- yield(content) -->
-            <x-dashboard.home></x-dashboard.home>
+        {{ $slot }}
         <!-- end yield(content) -->
         </div>
         @livewire('standard-components.footer')
