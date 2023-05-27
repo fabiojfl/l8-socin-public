@@ -28,11 +28,11 @@
     </header>
     <main class="main-content">
         @livewire('standard-components.sidebar')
-        <div class="contents">
-        <!-- yield(content) -->
-        {{ $slot }}
-        <!-- end yield(content) -->
-        </div>
+        
+            <!-- yield(content) -->
+            {{ $slot }}
+            <!-- end yield(content) -->
+        
         @livewire('standard-components.footer')
     </main>
     <div id="overlayer">

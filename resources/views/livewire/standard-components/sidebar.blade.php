@@ -26,7 +26,7 @@
                 </a>
                 <ul>
                     <li class="">
-                        <a href="blog.html">Listar publicações</a>
+                        <a href="">Listar publicações</a>
                     </li>
                 </ul>
             </li>
