@@ -10,6 +10,7 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Jetstream\HasTeams;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\Post;
 
 class User extends Authenticatable
 {
@@ -62,6 +63,11 @@ class User extends Authenticatable
     public function projects()
     {
        return $this->hasMany(Project::class);
+    }
+
+    public function posts()
+    {
+       return $this->hasMany(Post::class);
     }
 
     public function teams ()
