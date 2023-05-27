@@ -1,8 +1,6 @@
 <?php
-
-use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\PostController;
 
 Route::get('/', function () {return view('welcome'); });
 
@@ -19,6 +17,13 @@ Route::middleware(['auth:sanctum','verified'])->group(function(){
     Route::get('projects/create', [ProjectController::class, 'create'])->name('pages.projects.creations.create');
     Route::get('projects/{project}', [ProjectController::class, 'show'])->name('pages.projects.creations.show');
     Route::get('projects/{project}/edit', [ProjectController::class, 'edit'])->name('pages.projects.creations.edit');
+
+    Route::get('posts', [PostController::class, 'index'])->name('posts');
+    Route::get('post/create', [PostController::class, 'create'])->name('post.create');
+    
+    //'livewire.post.index'
+    //'livewire.post.create'   
+
     
 
 });

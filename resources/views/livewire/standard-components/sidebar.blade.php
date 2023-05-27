@@ -26,7 +26,10 @@
                 </a>
                 <ul>
                     <li class="">
-                        <a href="">Listar publicações</a>
+                        <a href="{{ route('posts') }}">Listar</a>
+                    </li>
+                    <li class="">
+                        <a href="{{ route('post.create') }}">Criar</a>
                     </li>
                 </ul>
             </li>
