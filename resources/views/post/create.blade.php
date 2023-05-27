@@ -1,7 +1,7 @@
 
 <x-app-layout>
     <div class="contents">
-        <p>create</p>
+        @livewire('post.create')
     </div>
 </x-app-layout>
 
