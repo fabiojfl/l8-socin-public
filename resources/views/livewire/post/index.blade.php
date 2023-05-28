@@ -31,15 +31,24 @@
                         <div class="blog-card__meta-count">
                            <ul>
                               <li>
-                                 <div class="blog-card__meta-reaction">
-                                    <img src="{{ asset('assets/img/svg/heart.svg') }}" alt="heart" class="svg">
-                                    <span class="blog-card__meta-reaction-like">15 K</span>
+                                 <div class="blog-card__meta-reaction blog-card__title">
+                                    <a href="#" class="entry-title" rel="bookmark">
+                                        <img src="{{ asset('assets/img/svg/image.svg') }}" alt="heart" class="svg">
+                                    </a>
                                  </div>
                               </li>
                               <li>
-                                 <div class="blog-card__meta-doc-wrapper">
-                                    <img src="{{ asset('assets/img/svg/file-text.svg') }}" alt="file-text" class="svg">
-                                    <span class="blog-card__meta-doc">75</span>
+                                 <div class="blog-card__meta-doc-wrapper blog-card__title">
+                                    <a href="#" class="entry-title" rel="bookmark">
+                                        <img src="{{ asset('assets/img/svg/edit.svg') }}" alt="file-text" class="svg">
+                                    </a>
+                                 </div>
+                              </li>
+                              <li>
+                                 <div class="blog-card__meta-doc-wrapper blog-card__title">
+                                    <a href="#" class="entry-title" rel="bookmark">
+                                        <img src="{{ asset('assets/img/svg/trash-2.svg') }}" alt="file-text" class="svg">
+                                    </a>
                                  </div>
                               </li>
                            </ul>
