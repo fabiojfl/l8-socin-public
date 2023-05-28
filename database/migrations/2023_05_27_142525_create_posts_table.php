@@ -27,8 +27,8 @@ class CreatePostsTable extends Migration
             $table->string('subtitle')->nullable();
             $table->text('content');
             $table->enum('status', ['no','yes']); 
-            $table->integer('user_id')->unsigned();
-			$table->foreign('user_id')->references('id')->on('users');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }

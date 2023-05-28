@@ -13,21 +13,21 @@
                     </div>
                     <div class="card-body pb-md-30">
                         <div class="Vertical-form">
-                            <form action="#">
+                            <form wire:submit.prevent="submit">
                                 <div class="form-group">
-                                    <label for="formGroupExampleInput" class="color-dark fs-14 fw-500 align-center mb-10">Título <b>*</b></label>
-                                    <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15" id="formGroupExampleInput" placeholder="">
+                                    <label for="title" class="color-dark fs-14 fw-500 align-center mb-10">Título <b>*</b></label>
+                                    <input wire:model="title" id="title" type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15"  placeholder="" required autofocus>
                                 </div>
                                 <div class="form-group">
-                                    <label for="formGroupExampleInput2" class="color-dark fs-14 fw-500 align-center mb-10">Sub título</label>
-                                    <input type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15" id="formGroupExampleInput2" placeholder="">
+                                    <label for="subtitle" class="color-dark fs-14 fw-500 align-center mb-10">Sub título</label>
+                                    <input wire:model="subtitle" id="subtitle" type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15"  placeholder="" required >
                                 </div>
                                 <div class="form-group form-element-textarea mb-20">
-                                <label for="formGroupExampleInput2" class="color-dark fs-14 fw-500 align-center mb-10">Texto</label>
-                                       <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <label for="content" class="color-dark fs-14 fw-500 align-center mb-10">Texto<b>*</b></label>
+                                       <textarea wire:model="content" id="content" class="form-control" rows="12" ></textarea>
                                     </div>
                                 <div class="layout-button mt-25">
-                                    <button type="button" class="btn btn-primary btn-default btn-squared px-30">Criar</button>
+                                    <button type="submit" class="btn btn-primary btn-default btn-squared px-30">Criar</button>
                                 </div>
                             </form>
                         </div>

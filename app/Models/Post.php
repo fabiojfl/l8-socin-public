@@ -15,7 +15,8 @@ class Post extends Model
         'title',
         'subtitle',
         'content',
-        'status'
+        'status',
+        'user_id'
     ];
 
     public function user()
@@ -28,6 +29,7 @@ class Post extends Model
     {
         static::creating(function ($model) {
             $model->user_id = auth()->user()->id;
+            $model->status = "yes";
         });
     }
 }
