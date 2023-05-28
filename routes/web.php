@@ -20,6 +20,7 @@ Route::middleware(['auth:sanctum','verified'])->group(function(){
 
     Route::get('posts', [PostController::class, 'index'])->name('post.index');
     Route::get('post/create', [PostController::class, 'create'])->name('post.create');
+    Route::get('post/{id}', [PostController::class, 'show'])->name('post.show');
     
     //'livewire.post.index'
     //'livewire.post.create'   

@@ -19,7 +19,8 @@
                      <div class="blog-card__content">
                         <div class="blog-card__title--top">15 March 2021</div>
                         <h4 class="blog-card__title">
-                           <a href="#" class="entry-title" rel="bookmark">{{$post->title}}</a>
+                           <a href="{{ url('post/'.$post->id) }}" class="entry-title" rel="bookmark">{{$post->title}}</a>
+                                    
                         </h4>
                         <p>{{$post->subtitle}}</p>
                      </div>
@@ -29,11 +30,11 @@
                            <span>{{$post->user->name}}</span>
                         </div>
                         <div class="blog-card__meta-count">
-                           <ul>
+                           <ul wire:key="{{ $post->id }}" >
                               <li>
                                  <div class="blog-card__meta-reaction blog-card__title">
-                                    <a href="#" class="entry-title" rel="bookmark">
-                                        <img src="{{ asset('assets/img/svg/image.svg') }}" alt="heart" class="svg">
+                                    <a href="#" class="entry-title">
+                                        <img src="{{ asset('assets/img/svg/image.svg') }}" alt="Visualizar post" class="svg">
                                     </a>
                                  </div>
                               </li>
