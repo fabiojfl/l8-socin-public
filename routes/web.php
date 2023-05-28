@@ -18,7 +18,7 @@ Route::middleware(['auth:sanctum','verified'])->group(function(){
     Route::get('projects/{project}', [ProjectController::class, 'show'])->name('pages.projects.creations.show');
     Route::get('projects/{project}/edit', [ProjectController::class, 'edit'])->name('pages.projects.creations.edit');
 
-    Route::get('posts', [PostController::class, 'index'])->name('posts');
+    Route::get('posts', [PostController::class, 'index'])->name('post.index');
     Route::get('post/create', [PostController::class, 'create'])->name('post.create');
     
     //'livewire.post.index'

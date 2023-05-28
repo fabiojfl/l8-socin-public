@@ -26,7 +26,7 @@
                 </a>
                 <ul>
                     <li class="">
-                        <a href="{{ route('posts') }}">Listar</a>
+                        <a href="{{ route('post.index') }}">Listar</a>
                     </li>
                     <li class="">
                         <a href="{{ route('post.create') }}">Criar</a>
