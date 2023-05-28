@@ -14,38 +14,12 @@
                     <div class="card-body pb-md-30">
                         <div class="Vertical-form">
                             <form wire:submit.prevent="submit">
-                                <div class="form-group">
-                                    
-                                    <label for="title" class="color-dark fs-14 fw-500 align-center mb-10">Título <b>*</b></label>
-                                    <input wire:model="title" id="title" type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15"  placeholder="" >
-                                    @if($errors->has('title'))
-                                        <div id="validationServer033Feedback" class="invalid-feedback" style="display:inline-block">
-                                            {{ $errors->first('title') }}
-                                        </div>
-                                    @endif
+                                
+                                <x-form.input label="Título" model="title" placeholder="campo obrigatório com até 75 caracteres"/>
+                                <x-form.input label="Sub título" model="subtitle" placeholder="até 255 caracteres" />
+                                <x-form.textarea label="Adicione o conteúdo" model="content"/>
+                                <x-form.button text="Criar" />
                                
-                                </div>
-                                <div class="form-group">
-                                    <label for="subtitle" class="color-dark fs-14 fw-500 align-center mb-10">Sub título</label>
-                                    <input wire:model="subtitle" id="subtitle" type="text" class="form-control ih-medium ip-gray radius-xs b-light px-15"  placeholder="">
-                                    @if($errors->has('subtitle'))
-                                        <div id="validationServer033Feedback" class="invalid-feedback" style="display:inline-block">
-                                            {{ $errors->first('subtitle') }}
-                                        </div>
-                                    @endif
-                                </div>
-                                <div class="form-group form-element-textarea mb-20">
-                                    <label for="content" class="color-dark fs-14 fw-500 align-center mb-10">Texto<b>*</b></label>
-                                    <textarea wire:model="content" id="content" class="form-control" rows="12" ></textarea>
-                                    @if($errors->has('content'))
-                                        <div id="validationServer033Feedback" class="invalid-feedback" style="display:inline-block">
-                                            {{ $errors->first('content') }}
-                                        </div>
-                                    @endif
-                                </div>
-                                <div class="layout-button mt-25">
-                                    <button type="submit" class="btn btn-primary btn-default btn-squared px-30">Criar</button>
-                                </div>
                             </form>
                         </div>
                     </div>
