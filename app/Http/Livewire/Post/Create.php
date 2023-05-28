@@ -14,8 +14,8 @@ class Create extends Component
     public function submit()
     {
         $data = $this->validate([
-            'title' => 'required',
-            'subtitle' => '',
+            'title' => 'required|max:75',
+            'subtitle' => 'max:255',
             'content' => 'required',
         ]);
 
