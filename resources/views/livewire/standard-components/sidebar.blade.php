@@ -14,7 +14,7 @@
                 </a>
                 <ul>
                     <li class="">
-                        <a href="users-membar.html">Lista de usuários</a>
+                        <a href="{{ route('users.index') }}">Lista de usuários</a>
                     </li>
                 </ul>
             </li>

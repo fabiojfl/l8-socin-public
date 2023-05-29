@@ -1,6 +1,7 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\UserController;
 
 Route::get('/', function () {return view('welcome'); });
 
@@ -21,6 +22,10 @@ Route::middleware(['auth:sanctum','verified'])->group(function(){
     Route::get('posts', [PostController::class, 'index'])->name('post.index');
     Route::get('post/create', [PostController::class, 'create'])->name('post.create');
     Route::get('post/{id}', [PostController::class, 'show'])->name('post.show');
+
+    Route::get('users', [UserController::class, 'index'])->name('users.index');
+
+    
     
     //'livewire.post.index'
     //'livewire.post.create'   

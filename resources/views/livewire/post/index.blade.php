@@ -33,7 +33,7 @@
                            <ul wire:key="{{ $post->id }}" >
                               <li>
                                  <div class="blog-card__meta-reaction blog-card__title">
-                                    <a href="#" class="entry-title">
+                                    <a href="{{ url('post/'.$post->id) }}" class="entry-title">
                                         <img src="{{ asset('assets/img/svg/image.svg') }}" alt="Visualizar post" class="svg">
                                     </a>
                                  </div>
