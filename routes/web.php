@@ -1,7 +1,9 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PostImageController;
 use App\Http\Controllers\UserController;
+
 
 Route::get('/', function () {return view('welcome'); });
 
@@ -22,6 +24,9 @@ Route::middleware(['auth:sanctum','verified'])->group(function(){
     Route::get('posts', [PostController::class, 'index'])->name('post.index');
     Route::get('post/create', [PostController::class, 'create'])->name('post.create');
     Route::get('post/{id}', [PostController::class, 'show'])->name('post.show');
+
+    Route::get('galeries/posts', [PostImageController::class, 'create'])->name('postImages.create');
+    Route::post('galeries/store', [PostImageController::class, 'store'])->name('postImage.store');
 
     Route::get('users', [UserController::class, 'index'])->name('users.index');
 

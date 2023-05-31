@@ -24,6 +24,10 @@ class Post extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function post_images()
+    {
+       return $this->hasMany(PostImage::class);
+    }
 
     protected static function booted()
     {
