@@ -18,13 +18,14 @@ class Create extends Component
             'subtitle' => 'max:255',
             'content' => 'required',
         ]);
-
+dd($data);
         Post::create([
             'title' => $data['title'],
             'subtitle' => $data['subtitle'],
             'content' => $data['content']
         ]);
 
+        return redirect()->to('postImages.create');
     }
 
     public function render()
