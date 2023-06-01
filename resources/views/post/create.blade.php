@@ -17,7 +17,7 @@
                               </ol>
                            </nav>
                         </div>
-                    -->
+                        -->
                      </div>
 
                   </div>
@@ -33,20 +33,12 @@
                            <div class="checkout-progress-indicator border-0 p-0 radius-md mt-lg-30 p-xl-20 py-30 ps-30 pe-lg-0 pe-30">
                               <div class="checkout-progress3">
                                  <div class="step current bg-lighter" id="1">
-                                    <span>Criar Conteúdo</span>
+                                    <span>1. Criar Conteúdo</span>
                                     <span>Cadastrar Título, Sub Título e o Texto</span>
                                  </div>
                                  <div class="step" id="2">
-                                    <span>Adicionar imagens</span>
+                                    <span>2. Adicionar imagens</span>
                                     <span>Colocar uma ou mais imagens para o anúncio do futuro investimento</span>
-                                 </div>
-                                 <div class="step" id="3">
-                                    <span>Payment Method</span>
-                                    <span>Use Credit or Debit Cards</span>
-                                 </div>
-                                 <div class="step" id="4">
-                                    <span>Review Order</span>
-                                    <span>Review and Submit</span>
                                  </div>
                               </div>
                            </div><!-- checkout -->

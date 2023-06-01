@@ -15,7 +15,7 @@ class CreatePostImagesTable extends Migration
     {
         Schema::create('post_images', function (Blueprint $table) {
             $table->id();
-            $table->string('post_photo_path', 2048)->nullable();
+            $table->string('post_photo_path')->nullable();
             $table->unsignedBigInteger('post_id');
             $table->foreign('post_id')->references('id')->on('posts');
             $table->timestamps();
